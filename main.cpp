@@ -18,7 +18,7 @@ int main() {
 
 	cout << "Enter point q2: ";
 	cin >> q2;
-	
+
 	cout << endl;
 
 	r = p2 - p1;
@@ -46,8 +46,8 @@ int main() {
 	}
 
 	if ((t >= 0 && t <= 1) && (u >= 0 && u <= 1)) {
-		Point adder = r * t;
-		intersect = p1 + adder;
+		Point add = r * t;
+		intersect = p1 + add;
 
 		cout << "Segments intersect at " << intersect << endl;
 	}
