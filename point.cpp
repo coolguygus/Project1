@@ -42,8 +42,8 @@ std::istream& operator>>(std::istream& is, Point& point) {
 
 std::ostream& operator<<(std::ostream& os, Point& point) {
 
-    Fraction x = p.getx;
-    Fraction y = p.gety;
+    Fraction x = p.getx();
+    Fraction y = p.gety();
     os << "(" << x << "," << y << ")";
 
     return os;

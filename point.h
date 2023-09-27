@@ -31,6 +31,6 @@ class Point {
 //IO Operators
 
 std::istream& operator>>(std::istream&, Point&);
-std::ostream& operator<<(std::ostream&, Point);
+std::ostream& operator<<(std::ostream&, Point&);
 
 #endif
