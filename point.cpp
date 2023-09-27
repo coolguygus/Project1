@@ -1,15 +1,15 @@
 #include "point.h"
 
-Point::Point(Fraction num1, Fraction num2) { //constructor
+Point::Point(Fraction xcoord, Fraction ycoord) { //constructor
     x = xcoord;
     y = ycoord;
 }
 
-void Point::setx(Fraction xcoord) { //setter for x
+void Point::setx(Fraction xcoord) { //setter 
     x = xcoord;
 }
 
-void Point::sety(Fraction ycoord) { //setter for y
+void Point::sety(Fraction ycoord) { //setter 
     y = ycoord;
 }
 
@@ -17,15 +17,15 @@ Point Point::operator+(const Point& p) { //Addition of two points
     return Point(x + p.x, y + p.y);
 }
 
-Point Point::operator+(const Point& p) { //Subtraction of two points
+Point Point::operator-(const Point& p) { //Subtraction of two points
     return Point(x - p.x, y - p.y);
 }
 
-Point Point::operator*(const Fraction& f) {
+Point Point::operator*(const Fraction& f) { //Scalar Multiplication
     return Point(x * f, y * f); 
 }
 
-Fraction Point::operator*(const Point& p) {
+Fraction Point::operator*(const Point& p) { //Cross Product
     return (x * p.y) - (y * p.x);
 }
 
@@ -42,7 +42,9 @@ std::istream& operator>>(std::istream& is, Point& point) {
 
 std::ostream& operator<<(std::ostream& os, Point& point) {
 
-    os << "(" << point.getx() << "," << point.gety() << ")";
+    Fraction x = p.getx;
+    Fraction y = p.gety;
+    os << "(" << x << "," << y << ")";
 
     return os;
 }

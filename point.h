@@ -18,7 +18,7 @@ class Point {
         Fraction gety() { return y; } //getter
 
         void setx(Fraction); //setter
-        void sety(fraction); //setter
+        void sety(Fraction); //setter
 
         Point operator+(const Point&); //Addition operator
         Point operator-(const Point&); //Subtraction operator
